@@ -1,0 +1,30 @@
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 25%;
+}
+
+.my-class .mat-menu-content {
+  padding: 0 !important;
+}
+
+ng-content th td {
+  text-align: center;
+}
+th.mat-header-cell,
+td.mat-cell {
+  text-align: center;
+  border: 1px solid black;
+  padding: 0 !important;
+}
+/*::ng-deep .mat-menu-content{
+  padding:0px !important;
+}*/

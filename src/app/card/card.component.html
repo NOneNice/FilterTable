@@ -1,0 +1,54 @@
+<mat-card>
+  <!--  <mat-checkbox
+
+    [(ngModel)]="blueColor"
+    (change)="applyFilter( 'color', blueColor ? 'blue': '')"
+  >Show only blue colors</mat-checkbox>-->
+
+  <!--<mat-form-field appearance="standard">
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter(undefined,undefined,$event)" placeholder="Ex. Mia" >
+  </mat-form-field>-->
+
+  <!--  <mat-form-field appearance="standard">
+    <mat-label>Глобальный фильтер</mat-label>
+    <input
+      matInput
+      (keyup)="applyFilter($event)"
+      placeholder="Глобальный фильтар"
+    />
+  </mat-form-field>-->
+
+  <mat-form-field>
+    <input
+      matInput
+      [ngModel]="globalFilter"
+      (ngModelChange)="applyFilter($event)"
+      placeholder="Глобальный фильтер"
+    />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+      matInput
+      class="form-field"
+      [formControl]="nameFilter"
+      placeholder="Фильтруем Имена"
+    />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+      matInput
+      class="form-field"
+      [formControl]="progressFilter"
+      placeholder="Фильтруем проценты"
+    />
+  </mat-form-field>
+
+  <!--  <mat-checkbox
+    [(ngModel)]="firstName"
+    (change)="applyFilter('name', firstName ? 'amelia': '')"
+  >Show all first name - Amelia</mat-checkbox
+  >-->
+</mat-card>
